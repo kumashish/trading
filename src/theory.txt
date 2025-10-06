@@ -101,8 +101,4 @@ Here are some commonly used time-series forecasting models:
 
 ---
 
-## Steps
-
-1. Extract the weekly close from the actual data.
-
 ---
