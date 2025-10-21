@@ -1,4 +1,7 @@
 ### SPY & QQQ Weekly Projections with Confidence Bands (Jul 27 - Dec 26, 2025)
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 ### This file should be used as the reference table for strategy in the file - https://github.com/kumashish/trading/blob/main/data/spy_strategy
 | Friday Date   | SPY Base | SPY ±1σ Band | SPY ±2σ Band | QQQ Base | QQQ ±1σ Band | QQQ ±2σ Band | Corr |
 |---------------|---------|--------------|--------------|---------|--------------|--------------|------|
