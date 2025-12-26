@@ -1,0 +1,64 @@
+Absolute Floors (% of SAM):
+Cash ≥ 4–5% of SAM
+Liquid ETF ≥ 11–12% of SAM
+Total Buffer ≥ 18–20% of SAM
+❗ If any floor is violated → NO NEW TRADES
+
+✅ Conditions Required (ALL must be YES)
+India VIX < 12
+No RBI / Fed / Budget / Election event in next 7 days
+All positions are defined risk
+Net delta between −0.2 to +0.2
+No short options within 1σ of spot
+
+🎯 Temporary Relaxation Allowed
+Item	Normal	Relaxed
+Cash %	4–5%	3% (never below ₹1.5L)
+Liquid ETF %	11–12%	9–10%
+Total Buffer	18–20%	≥15%
+Margin Usage	≤40%	Max 45% (briefly)
+
+⏱️ Max duration: 5–7 trading days
+📉 If VIX > 14 → revert immediately
+
+5️⃣ Strategy Eligibility Matrix
+Strategy	Allowed When	Not Allowed When
+Credit Spread	VIX ≥ 12	Spot near short strike
+Calendar	VIX ≤ 13	Event week
+Diagonal	Low VIX + trend bias	High gamma week
+Naked Sell	❌ Never	—
+
+6️⃣ Automatic Position Sizing (CORE LOGIC)
+Step 1: Define Risk Per Trade
+Max risk per trade = 0.6–0.8% of SAM
+With ₹36L SAM → ₹22k–₹29k
+
+Step 2: Compute Max Lots Automatically
+Formula:
+Max Lots = (Allowed Risk per Trade) ÷ (Max Loss per Lot)
+
+Example:
+Spread max loss per lot = ₹9,000
+Risk budget = ₹27,000
+👉 Max lots = 3
+
+7️⃣ Portfolio-Level Lot Caps (Hard Stops)
+Metric	Rule
+Total open risk	≤ 6–7% of SAM
+Same-side exposure	≤ 60% of total risk
+Same expiry risk	≤ 35%
+Weekly net theta	+0.15% to +0.3% of SAM
+8️⃣ NO-TRADE CONDITIONS (Instant Exit)
+
+🚫 Do NOT trade if ANY occur:
+VIX spike > 20% in 2 days
+Gap > ±1.2% against open positions
+Cash < ₹1.5L
+Liquid ETF < 10% of SAM
+Margin used > 45%
+
+9️⃣ Post-Trade Management Rules
+At 50–60% profit: book or roll
+At 1.3× max loss: exit (no debate)
+If delta > ±0.35: rebalance
+7 DTE rule: convert to defined risk or close
