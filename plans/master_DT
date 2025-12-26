@@ -1,79 +1,75 @@
-START (Trade Idea)
-   |
-   v
+Using Master Chart:
+Pre-market: Run steps 0 → 6
+Entry: Steps 7
+Daily (2–3 min): Steps 8 → 11
+Stress days: Steps 12 → 15
+Profit days: Steps 16
+Expiry week: Step 17
+
+
+START
+  |
+  v
 ┌────────────────────────────────────────────────────────────┐
-│ ⚠️ 0️⃣ EXTREME CONDITION CHECK (NO-TRADE GATE)             │
-│                                                            │
-│ Is ANY true?                                                │
-│ • Major event in next 48h (RBI / Budget / Fed)              │
-│ • India VIX ≥ 18                                            │
-│ • Overnight gap risk very high                              │
-│ • Margin usage already ≥ 40%                                │
-│ • You feel rushed / stressed / unsure                       │
-│                                                            │
+│ STEP 0️⃣  EXTREME CONDITION CHECK (NO-TRADE GATE)          │
+│ • VIX ≥ 18                                                  │
+│ • Major event < 48h                                         │
+│ • Gap risk high                                             │
+│ • Margin ≥ 40%                                              │
+│ • Emotional / rushed                                       │
 │ YES → 🚫 NO TRADE / REDUCE RISK                             │
-│ NO  → Proceed                                               │
+│ NO  → Continue                                             │
 └────────────────────────────────────────────────────────────┘
         |
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 1️⃣ Is India VIX < 12 ?                                     │
-│ (Low vol, long options cheap, diagonals viable)             │
+│ STEP 1️⃣  Is India VIX < 12 ?                               │
+│ (Low vol, diagonals viable)                                 │
 └────────────────────────────────────────────────────────────┘
         | YES                                 | NO
         v                                     v
 ┌────────────────────────────────────────────┐    ┌──────────────────────────────┐
-│ 2️⃣ Downside shock risk > upside worry?    │    │ 👉 STRUCTURE = SPREAD        │
-│ (Shares as margin, want smoother MTM)     │    │ (IV high / events / trend)  │
+│ STEP 2️⃣  Downside risk > upside worry?    │    │ STEP 5️⃣ STRUCTURE = SPREAD  │
+│ (Shares as margin, want smoother MTM)     │    │ (IV high / event / trend)    │
 └────────────────────────────────────────────┘    └──────────────────────────────┘
         | YES
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 3️⃣ Is short option expiry ≤ 7 DTE ?                        │
-│ (Fast theta in front leg)                                   │
+│ STEP 3️⃣  Short option expiry ≤ 7 DTE ?                    │
+│ (Fast theta on short leg)                                  │
 └────────────────────────────────────────────────────────────┘
         | YES                                 | NO
         v                                     v
 ┌────────────────────────────────────────────────────────────┐   ┌──────────────────────────────┐
-│ 4️⃣ Does diagonal use ≤ margin than spread?                 │   │ 👉 STRUCTURE = SPREAD        │
-│ (Capital efficiency inside 40% cap)                         │   │ (Cleaner, lower management) │
+│ STEP 4️⃣  Diagonal margin ≤ spread margin?                │   │ STEP 5️⃣ STRUCTURE = SPREAD  │
+│ (Capital efficiency ≤ 40% cap)                            │   │ (Cleaner, passive decay)    │
 └────────────────────────────────────────────────────────────┘   └──────────────────────────────┘
         | YES
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 5️⃣ Expected move inside ±1σ ?                              │
-│ (No fast trend, no event risk)                              │
+│ STEP 5️⃣  Expected move inside ±1σ ?                       │
+│ (No fast trend / no event risk)                            │
 └────────────────────────────────────────────────────────────┘
         | YES                                 | NO
         v                                     v
 ┌──────────────────────────────┐      ┌──────────────────────────────┐
-│ 👉 STRUCTURE = DIAGONAL      │      │ 👉 STRUCTURE = SPREAD        │
+│ STEP 6️⃣ STRUCTURE = DIAGONAL│      │ STEP 6️⃣ STRUCTURE = SPREAD  │
 │ (Put diagonal / calendar)   │      │ (Directional tolerance)     │
 └──────────────────────────────┘      └──────────────────────────────┘
         |
         v
 ┌──────────────────────────────────────────────────────────────────┐
-│ 6️⃣ WHAT SIZE SHOULD I USE?                                      │
-│                                                                  │
-│ a) India VIX                                                     │
-│    • < 10  → 0.75 × base size                                    │
-│    • 10–14 → 1.00 × base size                                    │
-│    • 14–18 → 1.25 × base size (defined risk only)               │
-│                                                                  │
-│ b) Trade duration                                                │
-│    • Weekly  → Max risk ≤ 0.5% capital                           │
-│    • Monthly → Max risk ≤ 1.0% capital                           │
-│                                                                  │
-│ c) Post-trade margin ≤ 40% ?                                     │
-│    • NO → Reduce size / Skip                                     │
-│                                                                  │
-│ d) Expected profit ≥ ₹600 per lot ?                              │
-│    • NO → Skip                                                   │
+│ STEP 7️⃣  WHAT SIZE SHOULD I USE?                                │
+│ • Weekly risk ≤ 0.5% capital                                    │
+│ • Monthly risk ≤ 1.0% capital                                   │
+│ • VIX sizing: <10 → 0.75× | 10–14 → 1× | 14–18 → 1.25×          │
+│ • Post-trade margin ≤ 40%                                       │
+│ • Expected profit ≥ ₹600 / lot                                  │
 └──────────────────────────────────────────────────────────────────┘
         |
         v
 ┌──────────────────────────────────────────────┐
-│ 7️⃣ PLACE TRADE                              │
+│ STEP 8️⃣  PLACE TRADE                        │
 │ • Limit orders only                          │
 │ • No chasing                                 │
 │ • Calm execution                             │
@@ -81,86 +77,46 @@ START (Trade Idea)
         |
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 🔁 POST-TRADE MANAGEMENT LOOP (DAILY)                         │
-└────────────────────────────────────────────────────────────┘
-        |
-        v
-┌────────────────────────────────────────────────────────────┐
-│ 8️⃣ DAILY HEALTH CHECK                                        │
+│ STEP 9️⃣  DAILY HEALTH CHECK                                 │
 │ • Price vs ±1σ                                               │
-│ • India VIX change                                           │
-│ • Margin usage %                                             │
-│ • Structure behaving as designed?                            │
+│ • VIX change                                                 │
+│ • Margin usage                                               │
+│ • Structure intact?                                          │
 └────────────────────────────────────────────────────────────┘
         |
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 9️⃣ Is price inside ±1σ ?                                     │
+│ STEP 🔟 Is price inside ±1σ ?                               │
 └────────────────────────────────────────────────────────────┘
         | YES                                 | NO
         v                                     v
 ┌────────────────────────────────────────────┐   ┌──────────────────────────────────┐
-│ 10️⃣ Is VIX stable / falling?              │   │ 12️⃣ STRUCTURE UNDER STRESS       │
+│ STEP 1️⃣1️⃣ Is VIX stable / falling?        │   │ STEP 1️⃣3️⃣ STRUCTURE STRESS     │
 └────────────────────────────────────────────┘   └──────────────────────────────────┘
         | YES               | NO
         v                   v
 ┌──────────────────────────────┐   ┌──────────────────────────────────┐
-│ 11️⃣ DO NOTHING              │   │ 13️⃣ VEGA BRANCH                   │
-│ (Let theta work)             │   │ (IV ↑ but price OK)               │
+│ STEP 1️⃣2️⃣ DO NOTHING        │   │ STEP 1️⃣4️⃣ VEGA BRANCH            │
+│ (Let theta work)             │   │ (IV ↑, price OK)                  │
 └──────────────────────────────┘   └──────────────────────────────────┘
                                      |
                                      v
 ┌────────────────────────────────────────────────────────────┐
-│ ACTION (Vega Branch):                                       │
-│ • Do NOT panic exit                                        │
-│ • Let long legs work                                       │
-│ • Optionally book 25–30% profits                           │
-│ • Reduce weakest weekly trades if needed                   │
-└────────────────────────────────────────────────────────────┘
-        |
-        v
-┌────────────────────────────────────────────────────────────┐
-│ 14️⃣ Has price CLOSED beyond −1σ with momentum?             │
-└────────────────────────────────────────────────────────────┘
-        | NO                                  | YES
-        v                                     v
-┌──────────────────────────────┐   ┌──────────────────────────────────┐
-│ Observe next close           │   │ 15️⃣ DAMAGE CONTROL               │
-│ No action yet                │   │ (Controlled intervention)        │
-└──────────────────────────────┘   └──────────────────────────────────┘
-                                     |
-                                     v
-┌────────────────────────────────────────────────────────────┐
-│ Is margin > 40% OR loss > 50% of max risk?                  │
+│ STEP 1️⃣5️⃣ DAMAGE CONTROL CHECK                             │
+│ Margin > 40% OR loss > 50% max risk ?                       │
 └────────────────────────────────────────────────────────────┘
         | YES                                  | NO
         v                                     v
 ┌──────────────────────────────────────────────┐   ┌──────────────────────────────┐
-│ ACTION:                                      │   │ ACTION:                      │
-│ • Close short PUT / front leg                │   │ • Reduce size 25–50%         │
-│ • KEEP long hedge                            │   │ • Convert to diagonal        │
-│ • Reduce margin to 30–35%                    │   │ • Monitor next close         │
-└──────────────────────────────────────────────┘   └──────────────────────────────┘
+│ STEP 1️⃣6️⃣ HARD REDUCTION                    │   │ STEP 1️⃣6️⃣ SOFT REDUCTION    │
+│ • Close short leg                            │   │ • Reduce size 25–50%         │
+│ • Keep hedge                                │   │ • Observe next close         │
+│ • Reduce margin to 30–35%                   │   └──────────────────────────────┘
+└──────────────────────────────────────────────┘
         |
         v
 ┌────────────────────────────────────────────────────────────┐
-│ 16️⃣ PROFIT CHECK                                           │
-│ Profit ≥ 40–50% ?                                           │
+│ STEP 1️⃣7️⃣ PROFIT / TIME EXIT CHECK                        │
+│ • 40–50% profit → book 50% qty                              │
+│ • <3 DTE & <25% profit → EXIT                               │
 └────────────────────────────────────────────────────────────┘
-        | YES                                  | NO
-        v                                     v
-┌──────────────────────────────┐   ┌──────────────────────────────┐
-│ Book 50% quantity            │   │ Hold                          │
-│ Let rest run to 65–70%       │   │ Recheck daily                 │
-└──────────────────────────────┘   └──────────────────────────────┘
-        |
-        v
-┌────────────────────────────────────────────────────────────┐
-│ 17️⃣ TIME CHECK                                             │
-│ Expiry < 3 DTE AND profit < 25% ?                           │
-└────────────────────────────────────────────────────────────┘
-        | YES                                  | NO
-        v                                     v
-┌──────────────────────────────┐   ┌──────────────────────────────┐
-│ EXIT (avoid gamma risk)      │   │ Continue monitoring           │
-└──────────────────────────────┘   └──────────────────────────────┘
