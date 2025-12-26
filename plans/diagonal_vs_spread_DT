@@ -1,0 +1,43 @@
+START
+  |
+  v
+┌────────────────────────────────────────────────────┐
+│ 1️⃣ Is India VIX < 12 ?                             │
+│ (Long options cheap, vega can help,                │
+│  low-vol environment)                               │
+└────────────────────────────────────────────────────┘
+        | YES                                              | NO
+        v                                                  v
+┌────────────────────────────────────────────┐    ┌──────────────────────────────┐
+│ 2️⃣ Is downside shock risk higher than      │    │ 👉 USE SPREAD               │
+│    upside worry?                            │    │ (IV too high, diagonals     │
+│ (Shares as margin, want smoother MTM path) │    │ expensive, spreads cleaner)│
+└────────────────────────────────────────────┘    └──────────────────────────────┘
+        | YES                                              |
+        v                                                  |
+┌────────────────────────────────────────────────────┐   |
+│ 3️⃣ Is short option expiry ≤ 7 DTE ?                │   |
+│ (Fast theta decay in front leg,                    │   |
+│  back-month option stays stable)                   │   |
+└────────────────────────────────────────────────────┘   |
+        | YES                                              | NO
+        v                                                  v
+┌────────────────────────────────────────────────────┐   ┌──────────────────────────────┐
+│ 4️⃣ Does the diagonal use ≤ margin than             │   │ 👉 USE SPREAD               │
+│    the equivalent credit spread?                   │   │ (Never sacrifice margin     │
+│ (Capital efficiency inside 40% usage cap)          │   │ efficiency for structure)   │
+└────────────────────────────────────────────────────┘   └──────────────────────────────┘
+        | YES
+        v
+┌────────────────────────────────────────────────────┐
+│ 5️⃣ Is price expected to stay inside ±1σ ?         │
+│ (No fast trend, no event risk,                     │
+│  market likely to drift / range)                   │
+└────────────────────────────────────────────────────┘
+        | YES                                              | NO
+        v                                                  v
+┌──────────────────────────────────────────────┐   ┌──────────────────────────────┐
+│ 👉 USE DIAGONAL                              │   │ 👉 USE SPREAD               │
+│ (Put diagonal / double calendar:             │   │ (Directional tolerance,     │
+│  smoother losses, vega support)              │   │ simpler management)         │
+└──────────────────────────────────────────────┘   └──────────────────────────────┘
