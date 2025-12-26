@@ -16,3 +16,155 @@
 | **08/26**    | 27,400    | 28,700    | 30,100    | 36,200    | 30,600 | Trail stops at 29,800 | ↑ Financials if credit growth >15% |
 | **09/26**    | 27,600    | 29,000    | 30,500    | 37,100    | 31,100 | Take profits >31,500 | ↑ Capex stocks if IIP >8% |
 | **10/26**    | 27,800    | 29,300    | 30,900    | 38,000    | 31,500 | Liquidate 20% if USDINR <81 | Gold hedge if real rates turn negative |
+
+PRE-TRADE (5 MINUTES – MANDATORY)
+1️⃣ Market Anchors
+
+☐ NIFTY spot ≈ current level
+
+☐ India VIX:
+
+< 12 → Calendars / Diagonals allowed
+
+12–16 → Spreads only
+
+16 → Reduce size / no new risk
+
+2️⃣ Forecast Reference
+
+☐ Use latest Base / ±1σ / ±2σ table
+
+☐ No recalculating mid-week
+
+☐ Strikes must map to σ bands
+
+🔹 PORTFOLIO LIMITS (DO NOT VIOLATE)
+
+☐ Max expiries open: 3
+
+☐ Naked options: ZERO
+
+☐ Margin usage ≤ 35%
+
+☐ Max loss per expiry ≤ 1% capital
+
+☐ Total −2σ downside (all expiries) ≤ 3% capital
+
+If any box fails → Reduce positions, don’t adjust strikes
+
+🔹 STRUCTURE SELECTION (CHOOSE ONE PER EXPIRY)
+🟢 WEEKLY (Cashflow Layer)
+
+☐ Structure: Put Spread / Put Diagonal
+
+☐ Sell PUT ≈ −0.5σ
+
+☐ Buy PUT ≈ −1σ
+
+☐ No call selling unless VIX > 14
+
+☐ Profit target: 30–40%
+
+☐ Exit if daily close < short strike
+
+🟡 MONTHLY (Core Engine)
+
+☐ Structure: Downside-Skewed Iron Condor
+
+☐ Sell PUT = −1σ
+
+☐ Buy PUT = −2σ
+
+☐ Sell CALL = +1σ to +1.5σ
+
+☐ Buy CALL = +2σ
+
+☐ Profit target: 40–50%
+
+☐ No adjustment unless −1σ breaks with momentum
+
+🔵 FAR-MONTH (Stabiliser)
+
+☐ Structure: Put Diagonal / Double Calendar
+
+☐ Long option must exist
+
+☐ Vega ≥ neutral
+
+☐ No naked selling
+
+☐ Leave untouched unless IV spikes
+
+🔹 POSITION SIZING CHECK
+
+☐ Weekly risk ≤ 0.5% capital
+
+☐ Monthly risk ≤ 1% capital
+
+☐ Combined open risk ≤ 2% capital
+
+☐ Shares margin drawdown considered
+
+If unsure → halve size
+
+🔹 DAILY MONITORING (2 MINUTES)
+Do NOTHING if:
+
+☐ Spot inside ±1σ
+
+☐ IV stable or falling slowly
+
+☐ MTM noise only
+
+ACT ONLY if:
+
+☐ Spot breaks −1σ with momentum
+
+☐ IV spikes > 20%
+
+☐ Margin usage crosses 35%
+
+🔹 ADJUSTMENT RULES (NO EXCEPTIONS)
+🔻 Downside Move
+
+☐ Close PUT spread if −1σ breaks hard
+
+☐ Keep CALL side intact
+
+☐ Optionally convert to diagonal
+
+🔺 Upside Move
+
+☐ Ignore until +1σ tested
+
+☐ Do NOT chase rolls
+
+☐ Calls are intentionally far
+
+🔹 WHAT YOU NEVER DO (READ DAILY)
+
+❌ Add size to recover MTM
+❌ Sell naked puts
+❌ Add new expiry without closing old
+❌ Trade based on “feel”
+❌ Adjust good structures due to noise
+
+🔹 WEEKLY RESET (FRIDAY / MONDAY)
+
+☐ Book profits
+
+☐ Close expiring legs
+
+☐ Recheck margin usage
+
+☐ Confirm forecast still valid
+
+☐ Prepare next week’s strikes
+
+🧠 FINAL REMINDER (MOST IMPORTANT)
+
+Forecast chooses strikes
+Structure limits damage
+Size decides survival
+
+If something feels stressful → your size is wrong, not the strategy.
