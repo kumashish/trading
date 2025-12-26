@@ -1,0 +1,76 @@
+🧩 CORE PRINCIPLE: SELL TIME, BUY SPEED
+Sell theta where moves are slow
+Buy convexity where moves are fast
+Never sell speed naked
+
+This leads to a three-layer portfolio.
+1️⃣ BASE LAYER (60–70% of risk)
+Income engine aligned with long-term bull market Structure
+Put-skewed credit spreads
+Calls farther OTM than puts
+Mostly monthly / weekly
+
+Example:
+Sell 25Δ Put / Buy 10Δ Put
+Sell 10Δ Call / Buy 3Δ Call
+
+Why this works?:
+Market drift supports puts
+Calls rarely explode in low IV
+Downside loss is defined
+📈 This captures grind-up + sideways markets
+📉 Survives normal corrections
+
+2️⃣ SHOCK ABSORBER LAYER (20–25%)
+You explicitly PAY for downside speed protection
+
+This is where most traders refuse to spend money — you won’t.
+
+A) Long Downside Convexity (cheap, persistent)
+30–60 DTE deep OTM put spreads
+OR broken-wing put butterflies
+
+Rules:
+Size: small but constant
+Treat as insurance, not a trade
+Roll monthly
+
+Why:
+When markets fall, IV explodes faster than price
+These pay disproportionately in panic
+
+📉 Drawdown smoothing
+📈 Lets you continue selling premium when others freeze
+
+B) Calendar Puts (event-agnostic)
+Buy next-month ATM put
+Sell front-week ATM put
+
+Why:
+Gains from IV spike
+Directionally neutral-ish
+No tail risk
+
+3️⃣ OPPORTUNISTIC LAYER (10–15%)
+Only activated AFTER sharp downmoves
+
+This is where your long-term bullishness prints money.
+
+A) Post-shock Put Spreads (Mean Reversion)
+Trigger:
+≥1.5% down day
+VIX spike > 15–20%
+
+Structure:
+Buy ATM Put
+Sell lower Put (defined risk)
+This is not catching a falling knife — it’s exploiting panic mispricing.
+
+B) Call Diagonals after volatility crush
+Once the panic fades:
+Buy 2–3 month ATM call
+Sell weekly calls repeatedly
+
+You monetize:
+IV crush
+Slow recovery grind
