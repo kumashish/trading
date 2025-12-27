@@ -1,7 +1,0 @@
-08_07:
-Wait for Nifty to test 24,600 support (sell 24200 puts) or 25,000 resistance (sell 25400 calls)
-Confirm VIX >17
-Enter before 2 Aug (avoid Aug FII rollover volatility)
-08_28:
-Sell 25,600 CE @ ₹110
-Sell ATM 24,800 straddle (PE+CE)
