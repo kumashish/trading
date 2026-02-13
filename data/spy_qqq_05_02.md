@@ -1,5 +1,4 @@
-# SPY & QQQ Trading Data (Weekly)
-
+# SPY & QQQ
 | Week Starting | SPY_1 | SPY_2 | QQQ_1 | QQQ_2 | QQQ_3 |
 |---|-------|-------|-------|-------|-------|
 | 2026-02-13 | 698   | 688   | 642   | 633   | 600   |
