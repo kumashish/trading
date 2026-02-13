@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPY & QQQ Trading Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f5f5f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            color: #2c2c2c;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1a5f7a;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1a5f7a 100%);
+            color: #ffffff;
+        }
+        
+        th {
+            padding: 14px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 12px 14px;
+            text-align: center;
+            border-bottom: 1px solid #e8e8e8;
+            font-size: 14px;
+        }
+        
+        tr:hover {
+            background-color: #f0f7ff;
+            transition: background-color 0.2s ease;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #fafaf8;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        
+        .date-cell {
+            font-weight: 500;
+            color: #1a5f7a;
+            min-width: 90px;
+        }
+        
+        .spy-1 { color: #0066cc; }
+        .spy-2 { color: #0052a3; }
+        .qqq-1 { color: #cc6600; }
+        .qqq-2 { color: #a34d00; }
+        .qqq-3 { color: #7a3800; }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 SPY & QQQ Trading Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th class="spy-1">SPY_1</th>
+                    <th class="spy-2">SPY_2</th>
+                    <th class="qqq-1">QQQ_1</th>
+                    <th class="qqq-2">QQQ_2</th>
+                    <th class="qqq-3">QQQ_3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="date-cell">2026-02-13</td>
+                    <td class="spy-1">698</td>
+                    <td class="spy-2">688</td>
+                    <td class="qqq-1">642</td>
+                    <td class="qqq-2">633</td>
+                    <td class="qqq-3">600</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-02-20</td>
+                    <td class="spy-1">700</td>
+                    <td class="spy-2">686</td>
+                    <td class="qqq-1">644</td>
+                    <td class="qqq-2">631</td>
+                    <td class="qqq-3">597</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-02-27</td>
+                    <td class="spy-1">702</td>
+                    <td class="spy-2">685</td>
+                    <td class="qqq-1">646</td>
+                    <td class="qqq-2">630</td>
+                    <td class="qqq-3">594</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-03-06</td>
+                    <td class="spy-1">705</td>
+                    <td class="spy-2">683</td>
+                    <td class="qqq-1">648</td>
+                    <td class="qqq-2">628</td>
+                    <td class="qqq-3">592</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-03-13</td>
+                    <td class="spy-1">707</td>
+                    <td class="spy-2">682</td>
+                    <td class="qqq-1">650</td>
+                    <td class="qqq-2">627</td>
+                    <td class="qqq-3">589</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-03-20</td>
+                    <td class="spy-1">710</td>
+                    <td class="spy-2">680</td>
+                    <td class="qqq-1">653</td>
+                    <td class="qqq-2">626</td>
+                    <td class="qqq-3">586</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-03-27</td>
+                    <td class="spy-1">712</td>
+                    <td class="spy-2">679</td>
+                    <td class="qqq-1">655</td>
+                    <td class="qqq-2">624</td>
+                    <td class="qqq-3">583</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-04-03</td>
+                    <td class="spy-1">715</td>
+                    <td class="spy-2">677</td>
+                    <td class="qqq-1">657</td>
+                    <td class="qqq-2">623</td>
+                    <td class="qqq-3">581</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-04-10</td>
+                    <td class="spy-1">717</td>
+                    <td class="spy-2">676</td>
+                    <td class="qqq-1">659</td>
+                    <td class="qqq-2">622</td>
+                    <td class="qqq-3">578</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-04-17</td>
+                    <td class="spy-1">720</td>
+                    <td class="spy-2">674</td>
+                    <td class="qqq-1">661</td>
+                    <td class="qqq-2">620</td>
+                    <td class="qqq-3">575</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-04-24</td>
+                    <td class="spy-1">722</td>
+                    <td class="spy-2">673</td>
+                    <td class="qqq-1">664</td>
+                    <td class="qqq-2">619</td>
+                    <td class="qqq-3">572</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-05-01</td>
+                    <td class="spy-1">725</td>
+                    <td class="spy-2">672</td>
+                    <td class="qqq-1">666</td>
+                    <td class="qqq-2">618</td>
+                    <td class="qqq-3">569</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-05-08</td>
+                    <td class="spy-1">727</td>
+                    <td class="spy-2">670</td>
+                    <td class="qqq-1">668</td>
+                    <td class="qqq-2">616</td>
+                    <td class="qqq-3">567</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-05-15</td>
+                    <td class="spy-1">730</td>
+                    <td class="spy-2">669</td>
+                    <td class="qqq-1">670</td>
+                    <td class="qqq-2">615</td>
+                    <td class="qqq-3">564</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-05-22</td>
+                    <td class="spy-1">732</td>
+                    <td class="spy-2">667</td>
+                    <td class="qqq-1">672</td>
+                    <td class="qqq-2">614</td>
+                    <td class="qqq-3">561</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-05-29</td>
+                    <td class="spy-1">735</td>
+                    <td class="spy-2">666</td>
+                    <td class="qqq-1">675</td>
+                    <td class="qqq-2">612</td>
+                    <td class="qqq-3">558</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-06-05</td>
+                    <td class="spy-1">737</td>
+                    <td class="spy-2">665</td>
+                    <td class="qqq-1">677</td>
+                    <td class="qqq-2">611</td>
+                    <td class="qqq-3">556</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-06-12</td>
+                    <td class="spy-1">740</td>
+                    <td class="spy-2">663</td>
+                    <td class="qqq-1">679</td>
+                    <td class="qqq-2">610</td>
+                    <td class="qqq-3">553</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-06-19</td>
+                    <td class="spy-1">742</td>
+                    <td class="spy-2">662</td>
+                    <td class="qqq-1">681</td>
+                    <td class="qqq-2">608</td>
+                    <td class="qqq-3">550</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-06-26</td>
+                    <td class="spy-1">745</td>
+                    <td class="spy-2">660</td>
+                    <td class="qqq-1">684</td>
+                    <td class="qqq-2">607</td>
+                    <td class="qqq-3">547</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-07-03</td>
+                    <td class="spy-1">748</td>
+                    <td class="spy-2">659</td>
+                    <td class="qqq-1">686</td>
+                    <td class="qqq-2">606</td>
+                    <td class="qqq-3">544</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-07-10</td>
+                    <td class="spy-1">750</td>
+                    <td class="spy-2">658</td>
+                    <td class="qqq-1">688</td>
+                    <td class="qqq-2">604</td>
+                    <td class="qqq-3">542</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-07-17</td>
+                    <td class="spy-1">753</td>
+                    <td class="spy-2">656</td>
+                    <td class="qqq-1">690</td>
+                    <td class="qqq-2">603</td>
+                    <td class="qqq-3">539</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-07-24</td>
+                    <td class="spy-1">755</td>
+                    <td class="spy-2">655</td>
+                    <td class="qqq-1">693</td>
+                    <td class="qqq-2">602</td>
+                    <td class="qqq-3">536</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-07-31</td>
+                    <td class="spy-1">758</td>
+                    <td class="spy-2">653</td>
+                    <td class="qqq-1">695</td>
+                    <td class="qqq-2">600</td>
+                    <td class="qqq-3">533</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-08-07</td>
+                    <td class="spy-1">760</td>
+                    <td class="spy-2">652</td>
+                    <td class="qqq-1">697</td>
+                    <td class="qqq-2">599</td>
+                    <td class="qqq-3">531</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-08-14</td>
+                    <td class="spy-1">763</td>
+                    <td class="spy-2">651</td>
+                    <td class="qqq-1">699</td>
+                    <td class="qqq-2">598</td>
+                    <td class="qqq-3">528</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-08-21</td>
+                    <td class="spy-1">766</td>
+                    <td class="spy-2">649</td>
+                    <td class="qqq-1">702</td>
+                    <td class="qqq-2">596</td>
+                    <td class="qqq-3">525</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-08-28</td>
+                    <td class="spy-1">768</td>
+                    <td class="spy-2">648</td>
+                    <td class="qqq-1">704</td>
+                    <td class="qqq-2">595</td>
+                    <td class="qqq-3">522</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-09-04</td>
+                    <td class="date-cell">771</td>
+                    <td class="spy-2">647</td>
+                    <td class="qqq-1">706</td>
+                    <td class="qqq-2">594</td>
+                    <td class="qqq-3">519</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-09-11</td>
+                    <td class="spy-1">773</td>
+                    <td class="spy-2">645</td>
+                    <td class="qqq-1">708</td>
+                    <td class="qqq-2">592</td>
+                    <td class="qqq-3">517</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-09-18</td>
+                    <td class="spy-1">776</td>
+                    <td class="spy-2">644</td>
+                    <td class="qqq-1">711</td>
+                    <td class="qqq-2">591</td>
+                    <td class="qqq-3">514</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-09-25</td>
+                    <td class="spy-1">779</td>
+                    <td class="spy-2">643</td>
+                    <td class="qqq-1">713</td>
+                    <td class="qqq-2">590</td>
+                    <td class="qqq-3">511</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-10-02</td>
+                    <td class="spy-1">781</td>
+                    <td class="spy-2">641</td>
+                    <td class="qqq-1">715</td>
+                    <td class="qqq-2">588</td>
+                    <td class="qqq-3">508</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-10-09</td>
+                    <td class="spy-1">784</td>
+                    <td class="spy-2">640</td>
+                    <td class="qqq-1">718</td>
+                    <td class="qqq-2">587</td>
+                    <td class="qqq-3">506</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-10-16</td>
+                    <td class="spy-1">787</td>
+                    <td class="spy-2">639</td>
+                    <td class="qqq-1">720</td>
+                    <td class="qqq-2">586</td>
+                    <td class="qqq-3">503</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-10-23</td>
+                    <td class="spy-1">789</td>
+                    <td class="spy-2">637</td>
+                    <td class="qqq-1">722</td>
+                    <td class="qqq-2">584</td>
+                    <td class="qqq-3">500</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-10-30</td>
+                    <td class="spy-1">792</td>
+                    <td class="spy-2">636</td>
+                    <td class="qqq-1">724</td>
+                    <td class="qqq-2">583</td>
+                    <td class="qqq-3">497</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-11-06</td>
+                    <td class="spy-1">795</td>
+                    <td class="spy-2">635</td>
+                    <td class="qqq-1">727</td>
+                    <td class="qqq-2">582</td>
+                    <td class="qqq-3">494</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-11-13</td>
+                    <td class="spy-1">797</td>
+                    <td class="spy-2">634</td>
+                    <td class="qqq-1">729</td>
+                    <td class="qqq-2">580</td>
+                    <td class="qqq-3">492</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-11-20</td>
+                    <td class="spy-1">800</td>
+                    <td class="spy-2">632</td>
+                    <td class="qqq-1">731</td>
+                    <td class="qqq-2">579</td>
+                    <td class="qqq-3">489</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-11-27</td>
+                    <td class="spy-1">803</td>
+                    <td class="spy-2">631</td>
+                    <td class="qqq-1">734</td>
+                    <td class="qqq-2">578</td>
+                    <td class="qqq-3">486</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-12-04</td>
+                    <td class="spy-1">805</td>
+                    <td class="spy-2">630</td>
+                    <td class="qqq-1">736</td>
+                    <td class="qqq-2">577</td>
+                    <td class="qqq-3">483</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-12-11</td>
+                    <td class="spy-1">808</td>
+                    <td class="spy-2">628</td>
+                    <td class="qqq-1">738</td>
+                    <td class="qqq-2">575</td>
+                    <td class="qqq-3">481</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-12-18</td>
+                    <td class="spy-1">811</td>
+                    <td class="spy-2">627</td>
+                    <td class="qqq-1">741</td>
+                    <td class="qqq-2">574</td>
+                    <td class="qqq-3">478</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">2026-12-25</td>
+                    <td class="spy-1">813</td>
+                    <td class="spy-2">626</td>
+                    <td class="qqq-1">743</td>
+                    <td class="qqq-2">573</td>
+                    <td class="qqq-3">475</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
