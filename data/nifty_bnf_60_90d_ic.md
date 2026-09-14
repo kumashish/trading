@@ -3,12 +3,6 @@
 Strategy: 60–90 DTE asymmetric Iron Condor planning, following the SPY/QQQ level-map format.
 
 - NIFTY: weekly expiry is Tuesday; use the first available Tuesday expiry that gives approximately 60–90 DTE at entry.
-- BANKNIFTY: populate only the last-Tuesday monthly expiry rows. Do **not** populate weekly BANKNIFTY rows.
-- Preferred structure: asymmetric Iron Condor, with the two scenario paths defined below.
-- NIFTY_1: upside path targeting **30,000 by end-December 2027**.
-- NIFTY_2: downside path targeting a **20% correction from the September 2026 starting level by end-December 2027**.
-- BANKNIFTY_1: upside path targeting **+30% from the September 2026 starting level by end-December 2027**.
-- BANKNIFTY_2: downside path targeting a **20% correction from the September 2026 starting level by end-December 2027**.
 - Levels are planning paths, not forecasts of exact weekly closes; actual option strikes should remain delta-based when trades are entered.
 
 ## Forward Level Map
@@ -85,11 +79,5 @@ Strategy: 60–90 DTE asymmetric Iron Condor planning, following the SPY/QQQ lev
 | 2027-12-28 | 30,000 | 18,700 | 73,600 | 45,300 |
 
 ## Notes
-
-- NIFTY_1 / BANKNIFTY_1 are the planning levels for the **upside path**; NIFTY_2 / BANKNIFTY_2 are the planning levels for the **downside path**.
-- NIFTY_1 ends at 30,000 by end-December 2027.
-- NIFTY_2 ends at approximately 18,700, representing a 20% correction from the September 2026 starting level.
-- BANKNIFTY_1 is populated only on the last Tuesday of each month and ends at approximately 73,600, representing +30% from the September 2026 starting level.
-- BANKNIFTY_2 is populated only on the last Tuesday of each month and ends at approximately 45,300, representing a 20% correction from the September 2026 starting level.
 - Actual option strikes should still be selected using live delta, IV, liquidity and expected-range data at entry; these are scenario planning levels rather than exact strike recommendations.
 - NSE specifies Tuesday expiry for NIFTY weekly contracts and last-Tuesday expiry for BANKNIFTY monthly contracts. If Tuesday is a trading holiday, expiry moves to the previous trading day.
